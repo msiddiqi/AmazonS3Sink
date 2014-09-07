@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" ZoomLevel="1.5" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="AmazonS3Sink" Category="Project" Bounds="80.6983333333333,0,98.3066666666667,25.96" Label="AmazonS3Sink" />
+    <Node Id="EnterpriseLibrary.SemanticLogging 1.0.1304.0" Category="Package" Bounds="0,55.96,259.703333333333,25.96" Label="EnterpriseLibrary.SemanticLogging 1.0.1304.0" />
+    <Node Id="Newtonsoft.Json 4.5.1" Category="Package" Bounds="62.125,111.92,135.453333333333,25.96" Label="Newtonsoft.Json 4.5.1" />
+  </Nodes>
+  <Links>
+    <Link Source="AmazonS3Sink" Target="EnterpriseLibrary.SemanticLogging 1.0.1304.0" Category="Installed Package" Bounds="129.851669311523,25.9599990844727,0,21" />
+    <Link Source="EnterpriseLibrary.SemanticLogging 1.0.1304.0" Target="Newtonsoft.Json 4.5.1" Category="Package Dependency" Bounds="129.851669311523,81.9199981689453,0,21" />
+  </Links>
+  <Categories>
+    <Category Id="Installed Package" />
+    <Category Id="Package" />
+    <Category Id="Package Dependency" />
+    <Category Id="Project" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Project" ValueLabel="True">
+      <Condition Expression="HasCategory('Project')" />
+      <Setter Property="Background" Value="Blue" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Package Dependency" ValueLabel="True">
+      <Condition Expression="HasCategory('Package Dependency')" />
+      <Setter Property="Background" Value="Yellow" />
+    </Style>
+  </Styles>
+</DirectedGraph>
